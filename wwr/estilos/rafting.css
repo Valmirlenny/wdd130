@@ -70,22 +70,23 @@ h1 {
 }
 
 .hero article {
-    position: absolute;       
-    bottom: -80px;            
-    left: 50%;               
-    transform: translateX(-50%); 
-    width: 90%;               
-    max-width: 600px;       
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: burlywood; 
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    display: flow-root;
+    background-color: var(--cor-secundaria);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+    
 
 .hero article img {
+    float: right;
+    margin-left: 20px;
     width: 125px;
     height: auto;
     
@@ -96,3 +97,8 @@ h1 {
     color: #333333;
     line-height: 1.5;
 }
+
+nav a {
+    text-decoration: none;
+}
+
