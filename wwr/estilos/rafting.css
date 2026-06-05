@@ -35,7 +35,6 @@ header nav ul li a {
     font-weight: bold;
     display: block;
     padding: 0.8rem 1.2rem;
-    text-decoration: none;
     transition: background-color 0.3s;
 }
 
@@ -147,7 +146,6 @@ nav a {
     color: var(--cor-principal, #023e8a); 
     grid-column: 1 / -1; 
     text-align: center;  
-    margin-bottom: 25px; 
 }
 .grid-aventuras {
     display: grid;
@@ -232,6 +230,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: var(--cor-destaque1); 
+    color: #ffffff; 
     padding: 20px 40px;
     margin-top: 50px;
 }
