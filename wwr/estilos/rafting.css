@@ -83,7 +83,7 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -145,8 +145,10 @@ nav a {
 .aventura-galeria h2 {
     margin-bottom: 25px;
     color: var(--cor-principal, #023e8a); 
+    grid-column: 1 / -1; 
+    text-align: center;  
+    margin-bottom: 25px; 
 }
-
 .grid-aventuras {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
@@ -240,18 +242,18 @@ footer p {
     font-size: 0.95rem;
 }
 
-footer .redes-sociais {
+footer .socialmedia {
     display: flex;
     gap: 25px; 
 }
 
-footer .redes-sociais img {
+footer .socialmedia img {
     width: 30px; 
     height: 30px; 
     display: block;
     transition: transform 0.2s ease;
 }
 
-footer .redes-sociais img:hover {
+footer .socialmedia img:hover {
     transform: scale(1.15); 
 }
