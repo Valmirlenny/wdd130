@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <link rel="stylesheet" href="estilos/solucao-exercicio-tabela.css">
+</head>
+
+<body>
+    <h1>Tabela</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Liga</th>
+                <th>time</th>
+                <th>Retrospecto (Vitórias-Derrotas)</th>
+                <th>Número de jogadores</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="2">Sul</th>
+                <td>Paraná</td>
+                <td>52-19</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <th>Santa Catarina</th>
+                <th>49-24</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Oeste</td>
+                <th>Lacerda</th>
+                <th>92-70</th>
+                <th>27</th>
+            </tr>
+            <tr>
+                <th>Acre</th>
+                <th>75-87</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>Rondônia</th>
+                <th>10-7</th>
+                <th>12</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de jogadores</td>
+                <th>92</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
