@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de pesquisa</title>
-    <link rel="stylesheet" href="formulario-pesquisa.html">
+    <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
 </head>
 
 <body>
@@ -14,37 +14,44 @@
     </header>
     <main>
         <form>
-            <label for="nomecompleto">Nome completo</label>
-            <input type="text" id="nome-completo" name="nome-completo" required>
-            <label for="emaildousuario">E-mail:</label>
-            <input type="email" name="email-do-usuario" id="email-do-usuario" required>
+            <div class="item-formulario coluna2">
+                <label for="nomecompleto">Nome Completo:</label>
+                <input type="text" id="nome-completo" name="nome-completo" required>
+            </div>
+            <div class="item-formulario coluna2">
+                <label for="emaildousuario">E-mail:</label>
+                <input type="email" id="email-do-usuario" name="email-do-usuario" required>
+            </div>
             <label for="quantidade">Selecione a quantidade:</label>
             <select name="quantidade" id="quantidade">
                 <option value="1">Um</option>
                 <option value="2">Dois</option>
                 <option value="3">Três</option>
             </select>
-            <label for="navegador">Qual é o seu navegador favorito?</label>
-            <select name="navegador" id="navegador">
-                <option value="Chrome">Chrome</option>
-                <option value="Safari">Safari</option>
-                <option value="Edge">Edge</option>
-                <option value="Brave">Brave</option>
-                <option value="Outro">Outro</option>
-            </select>
-            <label for="pet">Você tem um bichinho de estimação em casa?</label>
-            <input type="checkbox" name="pet" id="pet">
-            <label for="feedback">Liste os lugares onde você morou.</label>
-            <textarea name="feedback" id="feedback" rows="4"
-                placeholder="Stillwater Flórida, Amsterdã Holanda, Tibuktu Mali"></textarea>
+            <div class="item-formulario coluna1">
+                <label for="navegador">Qual é o seu navegador favorito?</label>
+                <select name="navegador" id="navegador">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Brave">Brave</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <div class="item-formulario coluna1">
+                <label for="pet">Você tem um bichinho de estimação em casa?</label>
+                <input type="checkbox" name="pet" id="pet">
+            </div>
+            <div>
+                <label for="feedback">Liste os lugares onde você morou.</label>
+                <textarea name="feedback" id="feedback" rows="4"
+                    placeholder="Stillwater Flórida, Amsterdã Holanda, Tibuktu Mali"></textarea>
+            </div>
+
             <button type="submit">Enviar pesquisa</button>
-
-
-
-
         </form>
-
     </main>
+
     <footer>
 
     </footer>
