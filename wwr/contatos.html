@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós Correnteza Máxima Rafting</title>
-    <meta name="description" content="Página dedicada a pessoas que buscam aventura, segurança e alegria.">
+    <title>Contato da empresa Correnteza Máxima Rafting</title>
+    <meta name="description" content="Página para entrar em contato com a empresa">
     <meta name="author" content="Valmirleny Cavalcante">
     <link rel="stylesheet" href="estilos/rafting.css">
 </head>
@@ -24,59 +24,87 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="imagens/rafting.jpg" alt="Logomarca da empresa">
-            <h1>Correnteza Máxima Rafting</h1>
-            <article>
-                <img src="imagens/pessoas.jpg" alt="Pessoas no bote">
-                <p>"O rio não é conquistado; ele é respeitado, compreendido e desfrutado. Nós somos apenas seus
-                    convidados."</p>
-            </article>
-        </div>
 
         <section class="secao-historia">
-            <img src="imagens/historia.jpg" alt="Fundadores da empresa">
-            <h2>História</h2>
-            <p>Tudo começou no verão de 2018. Mateo, um guia de rio certificado com milhares de quilômetros navegados;
-                Sofia, uma engenheira ambiental apaixonada por fotografia; e Lucas, um administrador de empresas que
-                odiava ternos e escritórios, estavam acampando às margens do Rio Bravo do Norte, um caudaloso rio famoso
-                por seus
-                cânions imponentes e corredeiras perigosas de Classe IV.
-            </p>
-            <p>Enquanto secavam as roupas ao redor da fogueira e tomavam um café forte, Lucas olhou para o rio e disse:
-                "As pessoas pagam fortunas para ir a parques de diversões artificiais, quando a verdadeira adrenalina,
-                aquela que faz você se sentir vivo, está fluindo bem diante de nós. Deveríamos compartilhar isso com o
-                mundo."
-                Naquela mesma noite, entre risadas e esboços em um guardanapo de papel, nasceu a "Correndeza Máxima".
-            </p>
+
+            <h2>Correnteza Máxima Rafting</h2>
+            <p>Rua principal do Rio Biguaçu Biguaçu-Santa Catarina +55 48 99999 99 99 info@maximarafting </p>
+
         </section>
 
+        <div class="map">
+            <iframe
+                src="
+                https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28314.097032853657!2d-48.654067593618045!3d-27.49222216407988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1781367034907!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="form-container">
+            <form action="/seu-endpoint-de-envio" method="POST">
+
+                <!-- Nome do usuário -->
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <!-- Endereço de e-mail -->
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu-email@exemplo.com" required>
+                </div>
+                <!-- Finalidade da mensagem (Botões Radio) -->
+                <div class="form-group-radio">
+                    <span class="label-fake">Finalidade da Mensagem:</span>
+                    <div class="radio-option">
+                        <input type="radio" id="geral" name="finalidade" value="Consulta Geral" required>
+                        <label for="geral">Consulta Geral</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="reserva" name="finalidade" value="Pergunta sobre Reserva">
+                        <label for="reserva">Pergunta sobre Reserva</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="sugestao" name="finalidade" value="Sugestão de Site">
+                        <label for="sugestao">Sugestão de Site</label>
+                    </div>
+                </div>
+                <!-- Mensagem -->
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
+                        required></textarea>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label for="newsletter">Quero receber a newsletter mensal</label>
+                </div>
+
+                <!-- Botão de Envio -->
+                <div class="form-actions">
+                    <button type="submit">Enviar Mensagem</button>
+                </div>
+            </form>
+        </div>
         <section class="aventura-galeria grid-aventuras">
-            <h2>A aventura está te esperando!</h2>
+            <h2>Estamos Aqui para Serví-lo</h2>
 
             <figure>
-                <img src="imagens/salto-rio-negro.jpg" alt="Rafting no Salto do Rio Negro">
-                <figcaption>Salto do Rio Negro</figcaption>
+                <img src="imagens/funcio1.jpg" alt="Condutor de Rafting João">
+                <figcaption>Condutor de Rafting</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/rio-paranapanema.jpg" alt="Corredeira do Rio Paranapanema">
-                <figcaption>Rio Paranapanema</figcaption>
+                <img src="imagens/funcio2.jpg" alt="Recepcionista Simone">
+                <figcaption>Recepcionista</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/rio-jacare.jpg" alt="Corredeira do Rio Jacaré">
-                <figcaption>Rio Jacaré</figcaption>
-            </figure>
-
-            <figure>
-                <img src="imagens/canion-bravo.jpeg" alt="Descida no Cânion do Rio Bravo">
-                <figcaption>Cânion do Rio Bravo</figcaption>
-            </figure>
-
-            <figure>
-                <img src="imagens/salto-caveiras.jpg" alt="Corredeira Salto das Caveiras">
-                <figcaption>Salto das Caveiras</figcaption>
+                <img src="imagens/funcio3.jpg" alt="Coordenadora Júlia">
+                <figcaption>Coordenadora de Base</figcaption>
             </figure>
         </section>
     </main>
