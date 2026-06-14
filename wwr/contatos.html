@@ -24,72 +24,76 @@
     </header>
 
     <main>
+        <div class="pagina-contato">
 
-        <section class="secao-historia">
+            <!-- 1. Informações de texto sempre no TOPO e centralizadas -->
+            <div class="bloco-info">
+                <section class="secao-dados">
+                    <h2>Correnteza Máxima Rafting</h2>
+                    <p>Rua principal do Rio Biguaçu</p>
+                    <p>Biguaçu-Santa Catarina</p>
+                    <p>+55 48 99999 99 99</p>
+                    <p>info@maximarafting</p>
+                </section>
+            </div>
 
-            <h2>Correnteza Máxima Rafting</h2>
-            <p>Rua principal do Rio Biguaçu Biguaçu-Santa Catarina +55 48 99999 99 99 info@maximarafting </p>
+            <!-- NOVA DIV: Agrupa os elementos que vão ficar lado a lado -->
+            <div class="conteudo-inferior">
 
-        </section>
+                <!-- 2. Mapa na ESQUERDA -->
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28314.645252255657!2d-48.65878828786619!3d-27.490090311725357!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1781393188047!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>></iframe>
+                </div>
 
-        <div class="map">
-            <iframe
-                src="
-                https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28314.097032853657!2d-48.654067593618045!3d-27.49222216407988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1781367034907!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- 3. Formulário na DIREITA -->
+                <div class="form-container">
+                    <form action="/seu-endpoint-de-envio" method="POST">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="seu-email@exemplo.com" required>
+                        </div>
+                        <div class="form-group-radio">
+                            <span class="label-fake">Finalidade da Mensagem:</span>
+                            <div class="radio-option">
+                                <input type="radio" id="geral" name="finalidade" value="Consulta Geral" required>
+                                <label for="geral">Consulta Geral</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="reserva" name="finalidade" value="Pergunta sobre Reserva">
+                                <label for="reserva">Pergunta sobre Reserva</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="sugestao" name="finalidade" value="Sugestão de Site">
+                                <label for="sugestao">Sugestão de Site</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
+                                required></textarea>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                            <label for="newsletter">Quero receber a newsletter mensal</label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div> <!-- Fim do conteudo-inferior -->
+
         </div>
-        <div class="form-container">
-            <form action="/seu-endpoint-de-envio" method="POST">
 
-                <!-- Nome do usuário -->
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-                </div>
-
-                <!-- Endereço de e-mail -->
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="seu-email@exemplo.com" required>
-                </div>
-                <!-- Finalidade da mensagem (Botões Radio) -->
-                <div class="form-group-radio">
-                    <span class="label-fake">Finalidade da Mensagem:</span>
-                    <div class="radio-option">
-                        <input type="radio" id="geral" name="finalidade" value="Consulta Geral" required>
-                        <label for="geral">Consulta Geral</label>
-                    </div>
-
-                    <div class="radio-option">
-                        <input type="radio" id="reserva" name="finalidade" value="Pergunta sobre Reserva">
-                        <label for="reserva">Pergunta sobre Reserva</label>
-                    </div>
-                    <div class="radio-option">
-                        <input type="radio" id="sugestao" name="finalidade" value="Sugestão de Site">
-                        <label for="sugestao">Sugestão de Site</label>
-                    </div>
-                </div>
-                <!-- Mensagem -->
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
-                        required></textarea>
-                </div>
-
-                <!-- Newsletter -->
-                <div class="checkbox-group">
-                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
-                    <label for="newsletter">Quero receber a newsletter mensal</label>
-                </div>
-
-                <!-- Botão de Envio -->
-                <div class="form-actions">
-                    <button type="submit">Enviar Mensagem</button>
-                </div>
-            </form>
-        </div>
-        <section class="aventura-galeria grid-aventuras">
+        <section class="Funcionarios-galeria grid-funcionarios ">
             <h2>Estamos Aqui para Serví-lo</h2>
 
             <figure>
