@@ -333,7 +333,60 @@ nav a {
     font-size: 1rem;
 }
 
+/* Parte da nova página principal*/
 
+/* 1. O CONTAINER PAI */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+/* 2. A IMAGEM PRINCIPAL */
+.banner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 3. A CAIXA DE TEXTO COM POSICIONAMENTO ABSOLUTO */
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; /* Cor das letras (Branco) */
+    
+    /* --- CONFIGURAÇÕES DA CAIXA --- */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto com 60% de opacidade (transparência elegante) */
+    padding: 30px 40px;                   /* Espaçamento interno (30px cima/baixo e 40px lados) */
+    border-radius: 8px;                   /* Arredonda os cantos da caixa */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave em volta da caixa para dar profundidade */
+    
+    /* Ajuste para telas menores */
+    width: 80%;                           /* Ocupa até 80% da tela em celulares */
+    max-width: 550px;                     /* Não passa de 550px em telas grandes (computador) */
+}
+
+/* Ajustes finos nos textos de dentro da caixa */
+.banner-texto h1 {
+    color: #fff;
+    font-size: 4rem;
+    margin: 0 0 10px 0;
+    text-transform: uppercase; /* Deixa o título em letras maiúsculas */
+    letter-spacing: 1px;       /* Espaçamento entre as letras do título */
+}
+
+.banner-texto p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 300;          /* Deixa o texto levemente mais fino que o título */
+}
+
+/* parte footer*/
 footer {
     display: flex;
     justify-content: space-between;
