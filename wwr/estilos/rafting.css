@@ -339,7 +339,7 @@ nav a {
     font-size: 4rem;
     margin: 0 0 10px 0;
     text-transform: uppercase; 
-    letter-spacing: 1px;       /
+    letter-spacing: 1px;       
 }
 
 .banner-texto p {
@@ -658,7 +658,7 @@ body {
 .card-passeio:hover .passeio-imagem img {
     transform: scale(1.05);
 }
-/
+
 .tag-nivel {
     position: absolute;
     top: 15px;
