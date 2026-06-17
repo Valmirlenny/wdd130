@@ -676,7 +676,7 @@ body {
 .nivel-dificil { background-color: #e76f51; }
 
 
-.passeio-info h3 {
+.passeio-info h2 {
     font-family: var(--fonte-titulo, serif);
     color: var(--cor-destaque1);
     font-size: 1.8rem;
