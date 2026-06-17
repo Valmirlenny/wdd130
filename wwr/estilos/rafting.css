@@ -7,44 +7,6 @@
     --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 20px;
-    background-color: var(--cor-destaque1);
-    color: var(--cor-destaque2);
-}
-
-header nav {
-    justify-self: end;
-}
-
-header nav ul {
-    list-style: none; 
-    display: flex;    
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;     
-    margin: 0;
-    padding: 0;
-}
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    display: block;
-    padding: 0.8rem 1.2rem;
-    transition: background-color 0.3s;
-    border: 1px solid #000000
-}
-
-header img {
-    width: 150px;       
-    height: auto;       
-    display: block;
-    margin-left: 90px
-}
 
 * {
     margin: 0;
@@ -58,7 +20,7 @@ body {
 }
 
 header, main, footer {
-    width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -78,10 +40,11 @@ nav, p, section, article {
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;      
+    object-fit: cover; 
 }
+
 
 .hero h1 {
     position: absolute;
@@ -129,6 +92,8 @@ nav, p, section, article {
     margin: 0;
     color: #333333;
     line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 nav a {
@@ -226,7 +191,8 @@ nav a {
     font-size: 1.1rem;
 }
 
-/* Container geral da página */
+/* PÁGINA CONTATOS*/
+
 .pagina-contato {
     max-width: 1000px;         
     margin: 40px auto;
@@ -333,9 +299,9 @@ nav a {
     font-size: 1rem;
 }
 
-/* Parte da nova página principal*/
+/* PÁGINA INICIAL*/
 
-/* 1. O CONTAINER PAI */
+
 .banner-container {
     position: relative;
     width: 100%;
@@ -343,7 +309,7 @@ nav a {
     overflow: hidden;
 }
 
-/* 2. A IMAGEM PRINCIPAL */
+
 .banner-container img {
     width: 100%;
     height: 100%;
@@ -351,43 +317,494 @@ nav a {
     display: block;
 }
 
-/* 3. A CAIXA DE TEXTO COM POSICIONAMENTO ABSOLUTO */
+
 .banner-texto {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #ffffff; /* Cor das letras (Branco) */
-    
-    /* --- CONFIGURAÇÕES DA CAIXA --- */
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto com 60% de opacidade (transparência elegante) */
-    padding: 30px 40px;                   /* Espaçamento interno (30px cima/baixo e 40px lados) */
-    border-radius: 8px;                   /* Arredonda os cantos da caixa */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave em volta da caixa para dar profundidade */
-    
-    /* Ajuste para telas menores */
-    width: 80%;                           /* Ocupa até 80% da tela em celulares */
-    max-width: 550px;                     /* Não passa de 550px em telas grandes (computador) */
+    color: #ffffff; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 30px 40px;                   
+    border-radius: 8px;                   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    width: 80%;                           
+    max-width: 550px;                     
 }
 
-/* Ajustes finos nos textos de dentro da caixa */
+
 .banner-texto h1 {
     color: #fff;
     font-size: 4rem;
     margin: 0 0 10px 0;
-    text-transform: uppercase; /* Deixa o título em letras maiúsculas */
-    letter-spacing: 1px;       /* Espaçamento entre as letras do título */
+    text-transform: uppercase; 
+    letter-spacing: 1px;       /
 }
 
 .banner-texto p {
     font-size: 1.2rem;
     margin: 0;
-    font-weight: 300;          /* Deixa o texto levemente mais fino que o título */
+    font-weight: 300;         
 }
 
-/* parte footer*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.página-inicial {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;     
+    padding-bottom: 0px;  
+    padding-left: 20px;   
+    padding-right: 20px;  
+    background-color: var(--cor-destaque1);
+    color: var(--cor-destaque2);
+}
+
+.página-inicial nav ul {
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    gap: 120px; 
+}
+
+*/
+.página-inicial nav a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+    
+    display: inline-block;        
+    border: 2px solid white;       
+    padding: 8px 16px;           
+    border-radius: 4px;           
+    transition: all 0.3s ease;   
+}
+
+
+.página-inicial nav a:hover {
+    color: #264653;               
+    background-color: white;      
+    border-color: white;          
+}
+.página-inicial img {
+    width: 140px; 
+    height: auto; 
+    max-height: 100px;
+}
+
+.cta-passeios {
+    background-color: #0056b3; 
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px; 
+}
+
+.cta-conteudo {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+
+.cta-conteudo h2 {
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+.cta-conteudo p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9; 
+}
+
+.botao-cta {
+    display: inline-block;
+    background-color: #ff7300; 
+    color: #ffffff;
+    text-decoration: none; 
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+}
+
+
+.botao-cta:hover {
+    background-color: #e66700; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.rafting-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; 
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+    font-family: sans-serif;
+}
+
+.grid-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.grid-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+}
+
+.card-conteudo {
+    padding: 25px;
+}
+
+.card-conteudo h2 {
+    color: #0056b3; 
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.card-conteudo p {
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.formulario-inicial form {
+    width: 30%;               
+    max-width: 800px;          
+    margin: 0 auto;
+    flex: 1;                  
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.form-group label, 
+.checkbox-group label {
+    font-size: 1.2rem;      
+    font-weight: bold;     
+    display: block;          
+    margin-bottom: 8px;     
+}
+
+
+.form-group input, 
+.form-group textarea {
+    font-size: 1.1rem;       
+    padding: 12px;           
+}
+
+
+.form-actions button {
+    font-size: 1.2rem;       
+    font-weight: bold;
+    padding: 12px 30px;      
+    cursor: pointer;
+}
+
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;            
+    height: 18px;
+    margin-right: 10px;     
+}
+
+
+/* PÁGINA DE PASSEIOS */
+
+.cta-contato {
+    width: 100%;
+    background-color: var(--cor-destaque1, #264653); 
+    padding: 60px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 50px; 
+}
+
+.cta-contato-conteudo {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.cta-contato-conteudo h2 {
+    font-family: var(--fonte-titulo, serif);
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.cta-contato-conteudo p {
+    font-family: var(--fonte-body, sans-serif);
+    color: #e9c46a; 
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.botao-fale-conosco {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--cor-secundaria, #f4a261); 
+    color: #ffffff;
+    font-family: var(--fonte-body, sans-serif);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+}
+
+.botao-fale-conosco:hover {
+    background-color: #e76f51; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.secao-passeios {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.titulo-passeios {
+    font-family: var(--fonte-titulo, serif);
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitulo-passeios {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.container-passeios {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; 
+}
+
+
+.card-passeio {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+
+.card-passeio.inverter {
+    direction: rtl; 
+}
+.card-passeio.inverter .passeio-info {
+    direction: ltr; 
+}
+
+
+.passeio-imagem {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.passeio-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+
+.card-passeio:hover .passeio-imagem img {
+    transform: scale(1.05);
+}
+/
+.tag-nivel {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 14px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.nivel-leve { background-color: #2a9d8f; }
+.nivel-medio { background-color: var(--cor-secundaria, #f4a261); }
+.nivel-dificil { background-color: #e76f51; }
+
+
+.passeio-info h3 {
+    font-family: var(--fonte-titulo, serif);
+    color: var(--cor-destaque1);
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.passeio-duracao {
+    color: #777;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.passeio-descricao {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.passeio-preco {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    background-color: rgba(5, 90, 5, 0.1); 
+    padding: 6px 15px;
+    border-radius: 4px;
+}
+
+/* --- RESPONSIVIDADE (Para Celular) --- */
+@media (max-width: 768px) {
+    .card-passeio, .card-passeio.inverter {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        direction: ltr;
+    }
+    
+    .passeio-imagem {
+        height: 220px; 
+    }
+}
+
+.secao-tabela-passeios {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.subtitulo-tabela {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+
+.tabela-responsiva {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    background-color: #ffffff;
+    font-family: var(--fonte-body, sans-serif);
+    text-align: left;
+}
+
+
+thead tr {
+    background-color: var(--cor-destaque1, #264653);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+}
+
+
+tbody tr:hover {
+    background-color: rgba(244, 162, 97, 0.1); 
+    transition: background-color 0.2s ease;
+}
+
+
+.nome-passeio {
+    font-weight: bold;
+    color: var(--cor-destaque1);
+}
+
+.preco-tabela {
+    font-weight: bold;
+    color: var(--cor-primaria, #055a05);
+    font-size: 1.1rem;
+}
+
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #ffffff;
+    display: inline-block;
+}
+.badge-iniciante { background-color: #2a9d8f; }
+.badge-intermediario { background-color: var(--cor-secundaria, #f4a261); }
+.badge-avancado { background-color: #e63946; }
+
+
+/* PARTE FOOTER PÁGINAS*/
 footer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

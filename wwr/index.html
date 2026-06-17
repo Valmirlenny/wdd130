@@ -11,8 +11,20 @@
 </head>
 
 <body>
+    <header class="página-inicial">
+        <img src="imagens/logo.png" alt="Logomarca da empresa" width="200">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contatos.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="banner-container">
-        <img src="imagens/rafting.jpg" alt="Imagem de fundo do cabeçalho">
+        <img src="imagens/rafting_inicial.jpeg" alt="Imagem de fundo do cabeçalho">
 
         <div class="banner-texto">
             <h1>Correnteza Máxima</h1>
@@ -20,38 +32,83 @@
         </div>
     </div>
 
-    <div class="grid">
+    <section class="rafting-container">
 
-        <main>
-            <h1 class="Indentação">VALMIRLENY DE SOUZA OLIVEIRA CAVALCANTE | WDD 130</h1>
-            <img src=" imagens/perfil.jpg" alt="Meu nome é Valmirleny Cavalcante" width="200">
-            <p class="indentação">Oi, meu nome é Valmirleny, sou cearense mas atualmente moro em Biguaçu-SC.
-                Sou casada com o Ismael a 19 anos e temos dois filhos a Eva e o Téo, de 8 e 6 anos. Sou funcionária
-                pública
-                e trabalho na prefeitura como Especialista em Assuntos Educacionais. Eu gosto de estudar, viajar, estar
-                com
-                a família.
-            </p>
-            <ul class="caixa indentação">
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/recife-brazil-temple?lang=por"
-                        target="_blank">Templo de Recife </a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/fortaleza-brazil-temple?lang=por"
-                        target="_blank">Templo de Fortaleza</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/curitiba-brazil-temple?lang=por"
-                        target="_blank">Templo de Curitiba</a></li>
-            </ul>
-        </main>
+        <div class="grid-card">
+            <img src="imagens/inicial1.jpg" alt="Pessoas praticando rafting em corredeiras fortes">
+            <div class="card-conteudo">
+                <h2>Nossa Finalidade</h2>
+                <p>Nosso objetivo é conectar você com a natureza selvagem através do rafting seguro e emocionante.
+                    Queremos
+                    proporcionar experiências inesquecíveis, promovendo o ecoturismo e desafiando seus limites nas
+                    melhores
+                    corredeiras do país.</p>
+            </div>
+        </div>
 
-        <aside class="caixa">
-            <h2>Santa Catarina-Brasil</h2>
-            <img src="imagens/imagem_ponte.jpg" alt="Ponte Hercílio Luz">
-            <p>Santa Catarina é um estado localizado na região Sul do Brasil e tem como capital Florianópolis.</p>
-        </aside>
+        <div class="grid-card">
+            <img src="imagens/inicial3.jpg" alt="Equipe de rafting comemorando no bote">
+            <div class="card-conteudo">
+                <h2>Nossas Ofertas</h2>
+                <p>Oferecemos pacotes para todos os níveis de aventura! Desde o "Rafting Família" (águas calmas e
+                    diversão
+                    para todas as idades) até o "Rafting Adrenalina" (corredeiras de classe IV para os mais corajosos).
+                    Equipamento completo e guias certificados inclusos.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <div class="formulario">
+        <div class="formulario-inicial">
+            <form action="/seu-endpoint-de-envio" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu-email@exemplo.com" required>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
+                            required></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                        <label for="newsletter">Quero receber a newsletter mensal</label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Enviar Mensagem</button>
+                    </div>
+            </form>
+        </div>
+
+        <section class="cta-passeios">
+            <div class="cta-conteudo">
+                <h2>Pronto para a Próxima Aventura?</h2>
+                <p>As vagas para os nossos botes são limitadas! Garanta o seu lugar nas melhores corredeiras e viva uma
+                    experiência inesquecível com seus amigos e família.</p>
+
+                <a href="passeios.html" class="botao-cta">Ver Passeios Disponíveis</a>
+            </div>
+        </section>
+
 
     </div>
 
     <footer>
-        <p>©️2026 🧩 Valmirleny Cavalcante 🧩 Santa Catarina, Brasil</p>
+        <p>©️2026 Correnteza Máxima Rafting | Valmirleny Cavalcante </p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="imagens/facebook.svg" alt="Ícone do facebook"></a>
+            <a href="https://linkedin.com"><img src="imagens/linkedin.svg" alt="Ícone do Linkedin"></a>
+            <a href="https://instagram.com"><img src="imagens/instagram.svg" alt="ìcone do Instagram"></a>
+        </nav>
+
     </footer>
 
 </body>
