@@ -207,9 +207,9 @@ nav a {
     margin-bottom: 40px;       
 }
 
-.secao-dados h2 {
+.secao-dados h1 {
     font-size: 2.2rem;
-    color: #333333;
+    color: #023e8a;
     margin-bottom: 15px;
 }
 
@@ -375,14 +375,12 @@ body {
     gap: 120px; 
 }
 
-*/
+
 .página-inicial nav a {
     text-decoration: none;
     color: white;
     font-family: sans-serif;
     font-weight: bold;
-    
-    
     display: inline-block;        
     border: 2px solid white;       
     padding: 8px 16px;           
